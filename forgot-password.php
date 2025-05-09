@@ -14,7 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Generate a unique verification token (OTP)
     $verificationToken = generateOTP();
-
+    // Check if the email exists in the database
+    $checkEmailQuery = "SELECT * FROM users WHERE email = '$userEmail'";      
+    $result = $conn->query($checkEmailQuery);
     // Insert the token into the database along with the user email
     $insertQuery = "INSERT INTO verification (user_email, token) VALUES ('$userEmail', '$verificationToken')";
 
