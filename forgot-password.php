@@ -33,6 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: forgot-password.php");
         exit();
     }
+    // Email is not verified, proceed with generating the token
+    // Check if the email is already in the verification table
     // Insert the token into the database along with the user email
     $insertQuery = "INSERT INTO verification (user_email, token) VALUES ('$userEmail', '$verificationToken')";
 
