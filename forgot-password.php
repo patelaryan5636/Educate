@@ -35,6 +35,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Email is not verified, proceed with generating the token
     // Check if the email is already in the verification table
+    $checkVerificationQuery = "SELECT * FROM verification WHERE user_email = '$userEmail'";
+    $verificationResult = $conn->query($checkVerificationQuery);
+    if ($verificationResult->num_rows > 0) {
+        // Email is already in the verification table, handle the error
+        $_SESSION['educat_error_message'] = "Email is already in the verification table.";
+        header("Location: forgot-password.php");
+        exit();
+    }
     // Insert the token into the database along with the user email
     $insertQuery = "INSERT INTO verification (user_email, token) VALUES ('$userEmail', '$verificationToken')";
 
