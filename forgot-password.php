@@ -14,15 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Generate a unique verification token (OTP)
     $verificationToken = generateOTP();
-    // Check if the email exists in the database
-    $checkEmailQuery = "SELECT * FROM users WHERE email = '$userEmail'";      
-    $result = $conn->query($checkEmailQuery);
-    if ($result->num_rows == 0) {
-        // Email does not exist, handle the error
-        $_SESSION['educat_error_message'] = "Email not found in our records.";
-        header("Location: forgot-password.php");
-        exit();
-    }
     // Insert the token into the database along with the user email
     $insertQuery = "INSERT INTO verification (user_email, token) VALUES ('$userEmail', '$verificationToken')";
 
