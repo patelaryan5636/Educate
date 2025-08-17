@@ -27,14 +27,24 @@
 
 <table>
   <tr>
-    <td align="center"><b>Jay Thaker</b><br>(21012250410045)</td>
-    <td align="center"><b>Samarth Jayswal</b><br>(21012250410046)</td>
-    <td align="center"><b>Vansh Mistry</b><br>(21012250410070)</td>
-  </tr>
-  <tr>
-    <td align="center"><b>Aryan Patel</b><br>(21012250410087)</td>
-    <td align="center"><b>Rudra Patel</b><br>(21012250410111)</td>
-    <td align="center"><b>Priyanshu Pithadiya</b><br>(21012250410127)</td>
+    <td align="center">
+      <a href="https://github.com/patelaryan5636">
+        <img src="https://avatars.githubusercontent.com/u/114292762?v=4" width="80px;" alt="Aryan"/>
+        <br /><sub><b>Aryan Patel</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/PYSu2512">
+        <img src="https://avatars.githubusercontent.com/u/136781616?v=4" width="80px;" alt="Priyanshu"/>
+        <br /><sub><b>Priyanshu Pithadiya</b></sub>
+      </a>
+    </td>
+<!--     <td align="center">
+      <a href="https://github.com/PYSu2512">
+        <img src="https://avatars.githubusercontent.com/u/136781616?v=4" width="80px;" alt="Vansh"/>
+        <br /><sub><b>Vansh Mistry</b></sub>
+      </a>
+    </td> -->
   </tr>
 </table>
 
