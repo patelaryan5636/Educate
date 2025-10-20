@@ -4,7 +4,7 @@
 
 <h1 align="center">📚 <span style="color:#0073e6">EduCat – E-Learning Platform</span></h1>
 <p align="center">
-  <b>A modern platform for <span style="color:#FF5733">students, instructors, and admins</span> to collaborate and learn</b>
+  <b>A modern platform for <span style="color:#FF5733">students, instructors, and admins</span> to collaborate and learns</b>
 </p>
 
 <p align="center">
